@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
         for(size_t y = 0; y < height; y++)
         {
             fbgl_color_rgb_t* pixel = (buffer.data + (y * width + x) * sizeof(fbgl_color_rgb_t));
-            fragment_shader(NULL, x * 1.0 / 255, y * 1.0 / 255, pixel);
+            fragment_shader(NULL, x * 1.0 / width, y * 1.0 / height, pixel);
             // This is called per rasterized pixel. For now the entire screen is rasterized.
         }
     }
