@@ -5,6 +5,8 @@ project(fbgl)
 add_library(
     ${PROJECT_NAME}
     "src/bitmap.c"
+    "src/pipeline.c"
+    "src/buffer.c"
 )
 
 target_include_directories(
